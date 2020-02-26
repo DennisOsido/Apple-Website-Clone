@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    background-color: red;
 }
 
 #main-image {
+    min-width: 1024px;
     width: 75%;
+    min-height: 768px;
     padding: 0;
     margin: 0;
 }
@@ -18,8 +19,25 @@ nav {
     background-color: aqua;
     z-index: 1;
     text-align: center;
-    top: 9%;
+    top: 8.5%;
     left: 24.5%;
     width: 51%;
-    height: 6%;
+    height: 3.5%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list {
+    width: 12%;
+    height: 100%;
+    background-color: rgb(200, 200, 200);
+    padding: 7.5px 0;
+    margin: 0;
+    border: 1px solid black;
 }
