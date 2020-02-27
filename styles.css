@@ -16,7 +16,6 @@ body {
 
 nav {
   position: absolute;
-  background-color: aqua;
   z-index: 1;
   text-align: center;
   top: 8.5%;
@@ -36,11 +35,34 @@ nav ul {
 .nav-list {
   width: 12%;
   height: 100%;
-  background-color: rgb(200, 200, 200);
+  background-color: gray;
   padding: 7.5px 0;
   margin: 0;
   border: 1px solid black;
   border-radius: 5%;
+}
+
+.nav-anchor {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+#apple-icon {
+  width: 20px;
+  height: 20px;
+  padding: -5px;
+  margin: -5px;
+}
+
+#magnifier-icon {
+  width: 70px;
+  height: 25px;
+  padding: 0;
+  margin: -8px;
 }
 
 h1 {
@@ -113,7 +135,7 @@ a {
 }
 
 #footer-right {
-  width: 80%;
+  width: 90%;
   padding: 6px 0;
   margin-left: 0;
 }
