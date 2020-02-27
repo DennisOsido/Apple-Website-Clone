@@ -43,6 +43,55 @@ nav ul {
   border-radius: 5%;
 }
 
+h1 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 21%;
+  left: 11%;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+h2 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 31%;
+  left: 11%;
+  width: 80%;
+  height: 3.5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+h3 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 41.5%;
+  left: 11.5%;
+  width: 80%;
+  height: 3.5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+#play-image {
+  width: 15px;
+  height: 15px;
+}
+
 footer {
   font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-size: 10px;
