@@ -1,17 +1,77 @@
 body {
-  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "main main main main"
+    "arti arti arti arti"
+    "foot foot foot foot";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 705px 205px 100px;
   justify-content: center;
-  margin: 0;
+  text-align: center;
   padding: 0;
-  max-width: 100%;
+  margin: 0 12.5%;
 }
 
-#main-image {
-  min-width: 1024px;
-  width: 75%;
-  min-height: 768px;
+main {
+  grid-area: main;
   padding: 0;
   margin: 0;
+  width: auto;
+  background-image: url("img/main.png");
+  background-repeat: no-repeat;
+}
+
+article {
+  grid-area: arti;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+article ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+#article-image-1 {
+  background-image: url("img/article-image1.png");
+  background-repeat: no-repeat;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  height: 205px;
+}
+
+#article-image-2 {
+  background-image: url("img/article-image2.png");
+  background-repeat: no-repeat;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  height: 205px;
+}
+
+#article-image-3 {
+  background-image: url("img/article-image3.png");
+  background-repeat: no-repeat;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  height: 205px;
+}
+
+#article-image-4 {
+  background-image: url("img/article-image4.png");
+  background-repeat: no-repeat;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  height: 205px;
 }
 
 nav {
@@ -35,7 +95,12 @@ nav ul {
 .nav-list {
   width: 12%;
   height: 100%;
-  background-color: gray;
+  background:
+    linear-gradient(
+      rgb(60, 60, 60),
+      rgb(160, 160, 160),
+      rgb(60, 60, 60)
+    );
   padding: 7.5px 0;
   margin: 0;
   border: 1px solid black;
@@ -45,10 +110,6 @@ nav ul {
 .nav-anchor {
   color: white;
   text-decoration: none;
-}
-
-li:hover {
-  background-color: rgb(70, 70, 70);
 }
 
 #apple-icon {
@@ -115,12 +176,15 @@ h3 {
 }
 
 footer {
+  grid-area: foot;
   font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   margin: 0;
-  padding: 10px 10px;
+  padding: 10px 0 10px 20px;
   color: gray;
   text-align: left;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 a {
@@ -129,13 +193,10 @@ a {
 }
 
 #footer-left {
-  float: left;
-  width: 26%;
-  padding-left: 24%;
+  margin-left: 80px;
 }
 
 #footer-right {
-  width: 90%;
-  padding: 6px 0;
-  margin-left: 0;
+  margin-left: -100px;
+  margin-top: 5px;
 }
