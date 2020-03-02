@@ -1,22 +1,24 @@
 body {
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "main main main main"
     "arti arti arti arti"
     "foot foot foot foot";
-  grid-template-columns: 361px 361px 361px 361px;
-  grid-template-rows: 700px 205px 95px;
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 540px 205px 95px;
   justify-content: center;
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100vw;
+  width: 97.5vw;
 }
 
 main {
+  box-sizing: border-box;
   grid-area: main;
   padding: 0;
-  margin: 0;
+  margin-top: -150px;
   width: auto;
   background-image: url("img/main.png");
   background-repeat: no-repeat;
@@ -41,37 +43,37 @@ article ul {
   height: auto;
 }
 
-#article-image-1 {
+#article-1 {
   background-image: url("img/article-image1.png");
   background-repeat: no-repeat;
-  width: 361px;
+  width: 320px;
   padding: 0;
   margin: 0;
   height: 205px;
 }
 
-#article-image-2 {
+#article-2 {
   background-image: url("img/article-image2.png");
   background-repeat: no-repeat;
-  width: 361px;
+  width: 320px;
   padding: 0;
   margin: 0;
   height: 205px;
 }
 
-#article-image-3 {
+#article-3 {
   background-image: url("img/article-image3.png");
   background-repeat: no-repeat;
-  width: 361px;
+  width: 320px;
   padding: 0;
   margin: 0;
   height: 205px;
 }
 
-#article-image-4 {
+#article-4 {
   background-image: url("img/article-image4.png");
   background-repeat: no-repeat;
-  width: 361px;
+  width: 320px;
   padding: 0;
   margin: 0;
   height: 205px;
@@ -81,10 +83,11 @@ nav {
   position: absolute;
   z-index: 1;
   text-align: center;
-  top: 8.5%;
-  left: 24.5%;
-  width: 51%;
-  height: 3.5%;
+  padding-top: 150px;
+  top: 12.5%;
+  left: 12.5%;
+  width: 77%;
+  height: 6%;
 }
 
 nav ul {
@@ -100,9 +103,11 @@ nav ul {
   height: 100%;
   background:
     linear-gradient(
-      rgb(60, 60, 60),
-      rgb(160, 160, 160),
-      rgb(60, 60, 60)
+      rgb(110, 110, 110),
+      rgb(130, 130, 130),
+      rgb(150, 150, 150),
+      rgb(130, 130, 130),
+      rgb(110, 110, 110)
     );
   padding: 7.5px 0;
   margin: 0;
@@ -115,26 +120,12 @@ nav ul {
   text-decoration: none;
 }
 
-#apple-icon {
-  width: 20px;
-  height: 20px;
-  padding: -5px;
-  margin: -5px;
-}
-
-#magnifier-icon {
-  width: 70px;
-  height: 25px;
-  padding: 0;
-  margin: -8px;
-}
-
 h1 {
   position: absolute;
   z-index: 1;
   text-align: center;
-  top: 21%;
-  left: 11%;
+  top: 40%;
+  left: 12%;
   width: 80%;
   font-family: "Montserrat", sans-serif;
   font-size: 56px;
@@ -147,8 +138,8 @@ h2 {
   position: absolute;
   z-index: 1;
   text-align: center;
-  top: 31%;
-  left: 11%;
+  top: 55%;
+  left: 12%;
   width: 80%;
   height: 3.5%;
   font-family: "Montserrat", sans-serif;
@@ -162,8 +153,8 @@ h3 {
   position: absolute;
   z-index: 1;
   text-align: center;
-  top: 41.5%;
-  left: 11.5%;
+  top: 69.5%;
+  left: 13%;
   width: 80%;
   height: 3.5%;
   font-family: "Montserrat", sans-serif;
@@ -171,11 +162,6 @@ h3 {
   color: white;
   font-weight: 100;
   text-decoration: none;
-}
-
-#play-image {
-  width: 15px;
-  height: 15px;
 }
 
 footer {
@@ -196,14 +182,32 @@ a {
 }
 
 #footer-left {
-  margin-left: 80px;
+  margin-left: 55px;
 }
 
 #footer-right {
-  margin-left: -100px;
+  margin-left: -20px;
   margin-top: 5px;
 }
 
 h6 {
   display: none;
+}
+
+#footer-flag {
+  background-image: url("img/usa.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+#play {
+  background-image: url("img/play.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-left: -400px;
+  padding: 0;
 }
